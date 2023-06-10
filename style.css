@@ -2,41 +2,46 @@
 
 
 body{
-    display:flex;
-    flex-direction:column;
+    background-color:#7e7e7e;
     font-family: 'roboto';
-    
+    display:flex;
+    flex-direction: column;
 }   
 
+.main-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 75%;
+}
 
 /* ---------------Header Section ------------------*/
+
 
 .header{
     background-color: #1F2937;
     color: #f9faf8;
-    
-    
-}
-
-.header-link-bar{
     display:flex;
-    justify-content: center;
-    
-    
+    flex-direction: column;
+    padding-left:200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
 }
 
-.header-logo{
-    margin-top:18px;
-    font-size: 24px;
-    
-    
+.header-link-bar{    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:12px;
+    padding-bottom:32px;
 }
 
 .header-links{
-    display: flex;
+    display:flex;
     gap:18px;
-    
 }
+
 
 ul{
     list-style-type: none;
@@ -45,17 +50,34 @@ ul{
 
 a{
     color:#E5e7eb;
-    font-size: 24px;
+    font-size: 18px;
+    text-decoration: none;
 }
 
 .h-body{
     display:flex;
-    justify-content: center;
-    margin-bottom: 52px;
-    align-items: center;
-    gap:18px;
+    justify-content: space-between;
+    
+    
 }
 
+.header-logo{
+    font-size: 24px;
+
+}
+
+.right-header{
+    margin-left:32px;
+    align-self:flex-end;
+    border:#1F2937;
+    width:400px;
+    height:100px;
+}
+
+.left-header{
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
 h1{
     font-size: 48px;
     font:bolder;
